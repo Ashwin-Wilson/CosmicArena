@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js 3D Model Example</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>
+
+  <body style="margin: 0; overflow: hidden">
+    <a-scene embedded arjs>
+      <!-- 3D model loaded with gltf-model (a car model) -->
+      <a-entity
+        gltf-model="url(https://cdn.aframe.io/test-models/models/land/scene.gltf)"
+        scale="0.2 0.2 0.2"
+        position="0 0 0"
+      >
+      </a-entity>
+
+      <!-- AR marker using the Hiro pattern -->
+      <a-marker preset="hiro"></a-marker>
+
+      <!-- AR.js camera -->
+      <a-entity camera></a-entity>
+    </a-scene>
+
+    <script>
+      // Initialize AR.js configuration and disable the debug UI
+      var arScene = document.querySelector("a-scene");
+      arScene.setAttribute(
+        "arjs",
+        "sourceType: webcam; trackingBackend: artoolkit; debugUIEnabled: false; markersAreaEnabled: false"
+      );
+    </script>
+  </body>
+</html>
