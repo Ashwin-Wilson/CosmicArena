@@ -1,21 +1,47 @@
-body{
-    overflow:hidden ;
-    
+body {
+    overflow: hidden;
+
 }
-.outputCanvas-box{
-    width: 100%;
+
+section {
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    background-color: #002244;
+}
+
+.outputCanvas-box {
+    width: 20rem;
     align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-}
-section{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: #002244;
-}
-#outputCanvas{
+    right: 0;
+    float: right;
+    z-index: 1;
+
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: #0022448f;
+    /* background: rgba(255, 255, 255, 0.25); */
+    box-shadow: 0 8px 32px 0 rgba(0, 8, 122, 0.718);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
     border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.iss-map {
+    position: fixed;
+    z-index: 0;
+}
+
+#outputCanvas {
+    border-radius: 10px;
+    width: 100%;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); 
 }
