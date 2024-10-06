@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Pixelify+Sans:wght@400..700&display=swap"
     rel="stylesheet" />
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
 </head>
 
 <body>
@@ -20,6 +22,7 @@
   <section>
     <div class="p-5 d-flex flex-column justify-content-center align-items-center content">
       <h1 class="h text-center text-white title slideUp mb-5">Cosmic Arena</h1>
+      <span id="myElement"></span>
       <a href="gestureTrack/gestureTrack.html" target="_blank" rel="noopener noreferrer">
         <button class="play-button text-white p-3 mt-5 px-5">Play Now!</button></a>
     </div>
@@ -28,7 +31,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+   <script>
+    new TypeIt("#myElement", {
+      strings: "Galactic Games: Fun in microgravity Environment",
+    }).go();
+  </script>
+  
 </body>
 
 </html>

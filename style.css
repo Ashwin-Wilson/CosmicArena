@@ -5,7 +5,7 @@
 }
 
 body {
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 header {
@@ -14,14 +14,17 @@ header {
 }
 
 section {
-    /* background-color: var(--bg-mid); */
     background-image: url('https://youtu.be/0LMoAkkkPVc?si=OnplaKYZdXlifSNT');
-    position: fixed;
-    top: 30%;
-    left: 30%;
-    /* height: fit-content; */
-    /* width: fit-content; */
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+}
+
+#myElement{
+    position: relative;
+    color: white;
+    top: 8px;
 }
 
 .h{
