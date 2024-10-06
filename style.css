@@ -16,6 +16,17 @@ header {
 section {
     /* background-color: var(--bg-mid); */
     background-image: url('https://youtu.be/0LMoAkkkPVc?si=OnplaKYZdXlifSNT');
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    /* height: fit-content; */
+    /* width: fit-content; */
+    align-items: center;
+}
+
+.h{
+    position: relative;
+    top: 50px;
 }
 
 .title {
@@ -31,7 +42,7 @@ section {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8.5px);
     -webkit-backdrop-filter: blur(8.5px);
-    border-radius: 10px;
+    border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
