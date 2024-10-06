@@ -1,0 +1,26 @@
+/* Style for the AR experience */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+p {
+  color: #666;
+  margin: 10px auto;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+#ar-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
